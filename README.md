@@ -33,8 +33,6 @@ If your organization restricts PowerShell execution, follow its approved executi
 5. Optionally define a Central time range.
 6. Select **Build Timeline** and choose where to save the workbook.
 
-TXT and CSV inputs must contain a delimited table. Supported delimiters are tabs, commas, semicolons, and pipes.
-
 ## What You Get
 
 The generated workbook separates the analyst-facing sequence from the records needed to trace and review it.
