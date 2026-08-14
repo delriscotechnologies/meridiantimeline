@@ -1,4 +1,4 @@
-# meridiantimeline
+<h1 align="center" meridiantimeline
 
 A small Windows PowerShell 5.1 + WPF utility for building user-centered investigation timelines from TXT, CSV, and Excel logs.
 
