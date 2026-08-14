@@ -1,5 +1,6 @@
 <h1 align="center" meridiantimeline
-
+  
+<p align="center">
 A small Windows PowerShell 5.1 + WPF utility for building user-centered investigation timelines from TXT, CSV, and Excel logs.
 
 The tool normalizes timestamps from multiple source time zones, correlates activity for one investigated identity and its exact aliases, and creates an Excel workbook that preserves supporting evidence alongside a concise timeline.
