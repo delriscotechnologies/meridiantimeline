@@ -73,20 +73,6 @@ Output time is converted to Central and labeled automatically as CST or CDT. Amb
 | Detailed import issues | 1,000, followed by a suppression summary |
 | Raw event snapshot | 30,000 characters per Excel cell; the source file and SHA-256 remain available for verification |
 
-## Self-Test
-
-Run the integrated parser, timezone, explanation, duplicate-grouping, and Excel formula-safety checks with:
-
-```powershell
-powershell.exe -NoProfile -STA -File .\meridiantimeline.ps1 -SelfTest
-```
-
-A successful run returns:
-
-```text
-SELF_TEST_OK
-```
-
 ## Safety and Privacy
 
 - Runs locally and does not upload logs, request credentials, or connect to a remote service.
