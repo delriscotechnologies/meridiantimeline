@@ -4,13 +4,6 @@
   A local PowerShell utility for building user-centered investigation timelines from TXT, CSV, and Excel logs.
 </p>
 
-<p align="center">
-  <a href="#quick-start">Quick Start</a> ·
-  <a href="#what-you-get">Output</a> ·
-  <a href="#time-handling">Time Handling</a> ·
-  <a href="SECURITY.md">Security</a>
-</p>
-
 ---
 
 meridiantimeline is one Windows PowerShell 5.1 script with a WPF interface for organizing activity from multiple log sources around one investigated identity and its explicitly defined aliases.
