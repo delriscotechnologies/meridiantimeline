@@ -9,7 +9,7 @@ $MaxIssues = 1000
 
 $xaml = @'
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="meridiantimeline" Width="1040" Height="720" MinWidth="900" MinHeight="650"
+        Title="Timeline Creator" Width="1040" Height="820" MinWidth="900" MinHeight="760"
         WindowStartupLocation="CenterScreen" Background="#F4F6F8" FontFamily="Segoe UI" FontSize="13">
     <Window.Resources>
         <Style x:Key="Card" TargetType="Border"><Setter Property="Background" Value="White"/><Setter Property="BorderBrush" Value="#D7DEE8"/><Setter Property="BorderThickness" Value="1"/><Setter Property="CornerRadius" Value="8"/><Setter Property="Padding" Value="22"/></Style>
@@ -19,7 +19,7 @@ $xaml = @'
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions><RowDefinition Height="88"/><RowDefinition Height="*"/></Grid.RowDefinitions>
-        <Border Grid.Row="0" Background="White" BorderBrush="#D7DEE8" BorderThickness="0,0,0,1"><TextBlock Text="meridiantimeline" FontSize="23" FontWeight="SemiBold" Foreground="#0F172A" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+        <Border Grid.Row="0" Background="White" BorderBrush="#D7DEE8" BorderThickness="0,0,0,1"><TextBlock Text="Timeline Creator" FontSize="23" FontWeight="SemiBold" Foreground="#0F172A" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
         <Grid Grid.Row="1" Margin="28,22,28,28">
             <Grid.ColumnDefinitions><ColumnDefinition Width="370"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
             <Border Grid.Column="0" Style="{StaticResource Card}">
@@ -44,8 +44,8 @@ $xaml = @'
                 <Grid>
                     <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
                     <Grid><TextBlock Text="TIMELINE OUTPUT" FontSize="11" FontWeight="Bold" Foreground="#64748B"/><Border x:Name="StatusBadge" HorizontalAlignment="Right" Background="#F1F5F9" CornerRadius="12" Padding="11,4"><TextBlock x:Name="StatusBadgeText" Text="READY" FontSize="10" FontWeight="Bold" Foreground="#475569"/></Border></Grid>
-                    <TextBlock x:Name="ResultTitle" Grid.Row="1" Text="Ready to build" Margin="0,22,0,10" FontSize="18" FontWeight="SemiBold"/>
-                    <TextBox x:Name="ResultText" Grid.Row="2" IsReadOnly="True" Text="Add TXT, CSV, or XLSX files, select each source timezone, and enter the investigated user." TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Padding="14" Background="#F8FAFC" BorderBrush="#D7DEE8" FontFamily="Consolas" FontSize="12.5"/>
+                    <TextBlock x:Name="ResultTitle" Grid.Row="1" Text="How to build a timeline" Margin="0,22,0,10" FontSize="18" FontWeight="SemiBold"/>
+                    <TextBox x:Name="ResultText" Grid.Row="2" IsReadOnly="True" Text="1. Add TXT, CSV, or XLSX log files.&#x0A;&#x0A;2. Source timezone tells the tool how to interpret timestamps without a UTC marker or offset.&#x0A;&#x0A;3. Investigated User is the exact primary user ID or email address to correlate across every file.&#x0A;&#x0A;4. Exact aliases are other user IDs or email addresses that belong to the same person. Enter one per line.&#x0A;&#x0A;5. Start and End are optional inclusive filters in Central time (CST/CDT). Use yyyy-MM-dd HH:mm:ss, or leave both blank to include all matching events.&#x0A;&#x0A;6. Build Timeline creates the Excel workbook and asks where to save it." TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Padding="14" Background="#F8FAFC" BorderBrush="#D7DEE8" FontFamily="Consolas" FontSize="12.5"/>
                     <ProgressBar x:Name="Progress" Grid.Row="3" Height="8" Minimum="0" Maximum="100" Value="0" Margin="0,16,0,0"/>
                     <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,16,0,0"><Button x:Name="OpenFileButton" Content="Open File" IsEnabled="False" Style="{StaticResource Secondary}"/><Button x:Name="OpenFolderButton" Content="Open Folder" IsEnabled="False" Margin="8,0,0,0" Style="{StaticResource Secondary}"/></StackPanel>
                 </Grid>
