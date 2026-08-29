@@ -6,7 +6,7 @@
 
 ---
 
-Meridian Timeline combines TXT, CSV, and Excel logs around one investigated identity and its defined aliases, normalizes timestamps, and creates a reviewable Excel timeline.
+Meridian Timeline combines delimited TXT, CSV, and XLSX logs around one investigated identity and its defined aliases, normalizes timestamps, and creates a reviewable Excel timeline.
 
 > Use Meridian Timeline only with logs and systems you are authorized to investigate.
 
@@ -22,7 +22,7 @@ powershell.exe -NoProfile -STA -File .\meridiantimeline.ps1
 
 ## What it does
 
-1. Imports TXT, CSV, and Excel logs.
+1. Imports delimited TXT, CSV, and XLSX logs.
 2. Matches one investigated identity and explicitly defined aliases.
 3. Normalizes timestamps from supported source time zones.
 4. Builds an Excel workbook for timeline and evidence review.
@@ -51,7 +51,7 @@ The workbook contains:
 - Runs locally and does not upload logs or request credentials.
 - Does not modify source files.
 - Supports files up to 100 MB and 200,000 rows per file.
-- More than 60 distinct timeline moments requires narrowing the time range.
+- More than 60 distinct timeline moments triggers a review warning; no matching evidence is discarded.
 - Event explanations are deterministic and are not maliciousness verdicts.
 - Source logs and generated workbooks may contain sensitive information.
 
