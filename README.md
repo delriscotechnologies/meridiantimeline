@@ -50,9 +50,9 @@ The workbook contains:
 
 - Runs locally and does not upload logs or request credentials.
 - Does not modify source files.
-- Supports files up to 100 MB and 200,000 rows per file.
+- Supports files up to 100 MB and 200,000 rows per file; XLSX inputs are limited to 256 columns and 2,000,000 used cells.
 - More than 60 distinct timeline moments triggers a review warning; no matching evidence is discarded.
-- Event explanations are deterministic and are not maliciousness verdicts.
+- Windows event explanations distinguish subject and target accounts; missing roles stay unspecified. Explanations are not maliciousness verdicts.
 - Source logs and generated workbooks may contain sensitive information.
 
 See [SECURITY.md](SECURITY.md) for security guidance.
