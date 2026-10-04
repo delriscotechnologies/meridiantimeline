@@ -12,12 +12,12 @@ Meridian Timeline combines delimited TXT, CSV, and XLSX logs around one investig
 
 ## Install
 
-You need Windows, PowerShell, WPF support, Microsoft Excel desktop, and permission to read the source files and write the output workbook.
+Use Windows PowerShell 5.1 with Microsoft Excel desktop and permission to read the source files and write the output workbook.
 
 ```powershell
 git clone https://github.com/delriscotechnologies/meridiantimeline.git
 cd meridiantimeline
-powershell.exe -NoProfile -STA -File .\meridiantimeline.ps1
+.\meridiantimeline.ps1
 ```
 
 ## What it does
