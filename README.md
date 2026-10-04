@@ -54,9 +54,3 @@ The workbook contains:
 - More than 60 distinct timeline moments triggers a review warning; no matching evidence is discarded.
 - Windows event explanations distinguish subject and target accounts; missing roles stay unspecified. Explanations are not maliciousness verdicts.
 - Source logs and generated workbooks may contain sensitive information.
-
-See [SECURITY.md](SECURITY.md) for security guidance.
-
-## License
-
-Meridian Timeline is available under the [MIT License](LICENSE.md).
